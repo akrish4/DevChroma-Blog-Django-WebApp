@@ -1,0 +1,370 @@
+<footer class=" text-center text-light" style="background-color: #09090a;
+background-image: linear-gradient(315deg, #09090a 0%, #000000 74%);
+">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+         
+          <!--Grid column-->
+
+        
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+       DevChroma is a free and open source project. The main feature is to write blog.
+
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+      </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>Links</h5>
+      <ul class="list-unstyled text-small">
+       <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #130f40;
+  background-image: linear-gradient(315deg, #04030a 0%, #000000 74%);">
+    <div class="copyright">
+      &copy; Copyright  2021 - 2022
+    </div>
+    Designed & Developed By <a class="light"  href="">Ananthakrishnan</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+// Section 1
+
+<section class="section-1">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pray">
+            <img src="{% static 'images/altumcode.jpg' %}" alt="Pray">
+          </div>
+        </div>
+        <div class="col-md-6">
+           <div class="panel text-left">
+             <h2>DevChroma Blogs</h2>
+             <p class="pt-4">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ab eos totam sint repudiandae obcaecati numquam quas repellat, similique doloremque! 
+               Quisquam suscipit et vero? Quam eius cum exercitationem corporis numquam.
+             </p>
+             <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quis quidem excepturi iusto suscipit minus sunt cum nobis quo distinctio, 
+                 voluptas aut cumque. Veritatis odit nemo quaerat eum perspiciatis qui.Animi quis quidem excepturi iusto suscipit minus sunt cum nobis quo distinctio, 
+               voluptas aut cumque. Veritatis odit nemo quaerat eum perspiciatis qui.
+             </p>
+           </div>
+        </div>      
+      </div>
+    </div>
+  </section>
+
+  // Section 2
+
+  <section class="section-2 container-fluid p-0">
+    <div class="cover">
+      <div class="content text-center">
+        <h1>Some Features That Made Us Unique</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, debitis?
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid text-center">
+      <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+        <div class="rect">
+          <h1>15</h1>
+          <p>Happy Users</p>
+        </div>
+        <div class="rect">
+          <h1>25</h1>
+          <p>Blogs</p>
+        </div>
+        <div class="rect">
+          <h1>45</h1>
+          <p>Contact Requests</p>
+        </div>
+        <div class="rect">
+          <h1>15</h1>
+          <p>Total Projects</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="purchase text-center">
+      <h1>Purchase Whatever you Like</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, unde?</p>
+      <div class="cards">
+        <div class="d-flex flex-row justify-content-center flex-wrap">
+          <!-- First Card-->
+          <div class="card">
+            <div class="title">
+              <h5 class="card-title">Basic Plan</h5>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="pricing">
+              <h2>$0.0</h2>
+              <a href="#" class="btn btn-outline-dark px-5 py-2 mb-5">Purchase Now</a>
+            </div>
+          </div>
+          <!-- Second Card-->
+          <div class="card">
+            <div class="title">
+              <h5 class="card-title">Pro Plan</h5>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="pricing">
+              <h2>$5.28</h2>
+              <a href="#" class="btn btn-outline-dark px-5 py-2 mb-5">Purchase Now</a>
+            </div>
+          </div>
+          <!-- Third Card-->
+          <div class="card">
+            <div class="title">
+              <h5 class="card-title">Elite Plan</h5>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="pricing">
+              <h2>$84.71</h2>
+              <a href="#" class="btn btn-outline-dark px-5 py-2 mb-5">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+// Section 3
+
+ 
+  <section class="section-3 container-fluid p-0 text-center">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h1>Download Our App For All Platforms</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cum rerum iusto quasi blanditiis aliquam 
+          facilis architecto, ipsa accusamus, 
+          quam libero fugiat alias non odit in laudantium. Neque, cum aut.
+        </p>
+      </div>
+    </div>
+    <div class="platform row">
+      <div class="col-md-6 col-sm-12 text-right">
+        <div class="desktop shadow-lg">
+          <div class="d-flex flex-row justify-content-center">
+            <i class="fas fa-desktop fa-3x py-2 pr-2"></i>
+            <div class="text text-left">
+              <h3 class="pt-1 m-2">Desktop</h3>
+              <p class="p-0 m-0">On Website</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 text-left">
+        <div class="desktop shadow-lg">
+          <div class="d-flex flex-row justify-content-center">
+            <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+            <div class="text text-left">
+              <h3 class="pt-1 m-2">Mobile</h3>
+              <p class="p-0 m-0">On Mobile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  // Section 4
+
+  
+  <section class="section-4">
+    <div class="container text-center">
+      <h1 class="text-dark">
+        What Our Readers Say About Us
+      </h1>
+      <p class="text-secondary">
+        Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+    <div class="team row">
+      <div class="col-md-4 col-12 text-center">
+        <div class="card mr-2 d-inline-block shadow-lg">
+          <div class="card-img-top">
+            <img class="img-fluid border-radius-carosuel p-3" src="{% static 'images/user1.jpg' %}" alt="Member">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ananthakrishnan</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Fugiat ullam inventore voluptatum. Saepe, accusantium cumque culpa maiores dolorum cum perspiciatis.
+            </p>
+            <a href="#" class="text-secondary text-decoration-none">Go Somehwere</a>
+            <p class="text-black-50">Admin</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 text-center">
+        <!-- Carousel Starts-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <!--Card 2-->
+              <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img class="img-fluid rounded-circle w-55 p-3" src="{% static 'images/user2.jpg' %}" alt="Member">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Allu Mohan Kumar</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugiat ullam inventore voluptatum. Saepe, accusantium cumque culpa maiores dolorum cum perspiciatis.
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go Somehwere</a>
+                  <p class="text-black-50">Test Developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <!--Card 3-->
+              <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img class="img-fluid rounded-circle w-55 p-3" src="{% static 'images/user3.jpg' %}" alt="Member">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Arjun Kishor</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugiat ullam inventore voluptatum. Saepe, accusantium cumque culpa maiores dolorum cum perspiciatis.
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go Somehwere</a>
+                  <p class="text-black-50">Admin</p>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <!-- Carousel Ends-->
+      </div>
+      <div class="col-md-4 col-12 text-center">
+        <!--Card 2-->
+        <div class="card mr-2 d-inline-block shadow-lg">
+          <div class="card-img-top">
+            <img class="img-fluid border-radius-carosuel p-3" src="{% static 'images/user4.jpg' %}" alt="Member">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Vijay Singh</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Fugiat ullam inventore voluptatum. Saepe, accusantium cumque culpa maiores dolorum cum perspiciatis.
+            </p>
+            <a href="#" class="text-secondary text-decoration-none">Go Somehwere</a>
+            <p class="text-black-50">FrontEnd Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

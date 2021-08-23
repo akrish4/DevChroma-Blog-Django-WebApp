@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<style>
+     body{
+  
+ }
+
+ .btn1 {
+
+background-color: #310e68;
+background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+box-shadow: 0px 0px 10px rgba(0.5, 1.5, 0.5,1.5);
+}
+
+
+ span{
+   color: white;
+ }
+ .card{
+  border-radius: 15px;
+background-color: #e4b5cb;
+background-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
+border-radius: 30px;
+box-shadow: 1px 1px 10px rgba(0.0, 0.0, 1.2,1.5);
+
+
+
+ }
+ .form-group input{
+ border-radius: 12px;
+ }
+ h4{
+  background-color: reds;
+    }
+</style>
+{% endblock head %}
+{% block title %}
+LOGIN | DevChroma  
+{% endblock title %}
+{% block user %}
+active 
+{% endblock user %}
+{% block intro %}
+Please Login to Continue!
+{% endblock intro %}
+{% block href %}
+href="/about"
+{% endblock href %}
+{% block intro-image %}
+<img src="{% static 'images/skateboard.svg' %}"   class="img-fluid animated"  alt="hero-img" width="600">
+{% endblock intro-image %}
+{% block body %}
+{% load socialaccount %}
+<div class="container mt-4 mt-1 mb-2">
+    <div class="row">
+  
+    <div class="col-lg-5 col-md-12 col-lg-5 col-12 d-flex flex-column justify-content-center">
+    <img  type="image/png" src="{% static 'images/login2.png' %}" alt="contact">
+    </div> 
+    <div class="col-md-2">
+
+    </div>
+         <div class=" col-lg-5 col-md-8 col-lg-5 col-12 align-items-stretch order-1">
+            <div class="row">
+              <div class="col-md-2"></div>
+            </div>
+            <div class="col-md-8">
+     
+                <div class="card mt-4">
+                  {% for message in messages  %}
+           <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+            <strong></strong>{{message}}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+           </div>
+            {% endfor %}
+    
+    
+    <div class="card-body">   
+     <div class="d-grid gap-2">
+     <h4 class="text-center text-light">LOGIN</h4>
+       <a  class="btn btn-sm    btn-light"  href="{% provider_login_url 'google' %}"  >Login With <img src="https://img.icons8.com/color/30/000000/google-logo.png"/></a>
+     </div>
+     <h6> <p class="text-center text-light mb-0 mt-3 "> OR  </p></h6>
+     <form action="/login" method="post">{% csrf_token %}
+     <div class="form-group">
+     
+  
+     <label for="text"></label>
+     <input type="username" class="form-control" name="username" id="username" placeholder="Username" required>
+     </div>
+     
+     <div class="form-group">
+     <label for="pass1"></label>
+     <input type="password" class="form-control"  placeholder="Password" name="pass1" id="pass1" required>
+     </div>
+     <div class="d-grid gap-2">
+      <button type="submit" class="btn btn-neon  btn-sm text-light  rounded-pill btn-md  mb-3 mt-3">LOG IN</button>
+     </div>
+     
+    
+    </form> 
+    
+
+   <span class="text-light text-center">Forgot Password?</span>  <a class="text  btreset" style="color: #3f0207; 
+
+
+   " href="/request-reset-email/">Reset Here</a>
+ 
+      
+ <center>
+  
+</center>
+<span> New User ? </span><br>
+     <div class="d-grid gap-2 ">
+      <a type="submit" class="btn btn-sm  text-light   rounded-pill btn-neon mt-2" id="btn" href="/signup">SIGN UP</a>
+     </div>
+      
+
+
+    </div>   
+ 
+</div>
+
+            </div>
+            <div class="col-md-6">              
+            </div>
+         </div>
+         
+         
+    </div>
+</div>
+<br><br>
+<div class="down-unwanted-area">
+<p class="navbarscrolltime"></p>
+<div>
+{% endblock body %}

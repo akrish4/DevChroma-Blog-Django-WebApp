@@ -1,0 +1,263 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Home  |  DevChroma
+{% endblock title %}
+{% block head %}
+
+  <style>
+     
+      
+       
+        
+         
+          
+           
+            
+            
+  </style>
+  
+{% endblock head %}
+{% block home %}   btn-sm  text-light  "  type="submit" style="background-color: #2876f9;
+          background-image: linear-gradient(200deg, #2876f9 0%, #6d17cb 74%);"
+  active bold
+  
+{% endblock home %}
+{% block intro %}
+Blogs by Amazing Developers..
+{% endblock intro %}
+{% block href %}
+href="/about"
+{% endblock href %}
+{% block intro-image %}
+<img src="{% static 'images/dev.svg' %}" alt="hero-img"  class="img-fluid animated" width="600">
+{% endblock intro-image %}
+{% block body %}
+
+{% for message in messages  %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+        <strong></strong>{{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close ">
+          
+        </button>
+      </div>
+    {% endfor %}
+
+
+<main class="containe">
+  
+ 
+ 
+  
+<section class="section-1 ">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="pray">
+          <img src="{% static 'images/altumcode.jpg' %}" alt="Pray">
+        </div>
+      </div>
+      <div class="col-md-6">
+         <div class="panel text-left">
+           <h2>DevChroma Blogs</h2>
+           <p class="pt-4">
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ab eos totam sint repudiandae obcaecati numquam quas repellat, similique doloremque! 
+             Quisquam suscipit et vero? Quam eius cum exercitationem corporis numquam.
+           </p>
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quis quidem excepturi iusto suscipit minus sunt cum nobis quo distinctio, 
+               voluptas aut cumque. Veritatis odit nemo quaerat eum perspiciatis qui.Animi quis quidem excepturi iusto suscipit minus sunt cum nobis quo distinctio, 
+             voluptas aut cumque. Veritatis odit nemo quaerat eum perspiciatis qui.
+           </p>
+         </div>
+      </div>      
+    </div>
+  </div>
+</section>
+
+    <br>
+   
+
+
+  <section class="section-2 container-fluid p-0 navbarscrolltime">
+    <div class="cover">
+      <div class="content text-center">
+        <h1>Some Features That Made Us Unique</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, debitis?
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid text-center">
+      <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+        <div class="rect">
+          <h1>07</h1>
+          <p>Happy Users</p>
+        </div>
+        <div class="rect">
+          <h1>22</h1>
+          <p>Blogs</p>
+        </div>
+        <div class="rect">
+          <h1>14</h1>
+          <p>Contact Requests</p>
+        </div>
+        <div class="rect">
+          <h1>07</h1>
+          <p>Profiles</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="purchase text-center">
+      <h1>Purchase Whichever you Like</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, unde?</p>
+      <div class="cards">
+        <div class="d-flex flex-row justify-content-center flex-wrap">
+          <!-- First Card-->
+          <div class="card">
+            <div class="title">
+              <h5 class="card-title">Basic Plan</h5>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="pricing">
+              <h2>$0.0</h2>
+              <a href="#" class="btn btn-outline-dark px-5 py-2 mb-5">Purchase Now</a>
+            </div>
+          </div>
+          <!-- Second Card-->
+          <div class="card">
+            <div class="title">
+              <h5 class="card-title">Pro Plan</h5>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="pricing">
+              <h2>$5.28</h2>
+              <a href="#" class="btn btn-outline-dark px-5 py-2 mb-5">Purchase Now</a>
+            </div>
+          </div>
+          <!-- Third Card-->
+          <div class="card">
+            <div class="title">
+              <h5 class="card-title">Elite Plan</h5>
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="pricing">
+              <h2>$84.71</h2>
+              <a href="#" class="btn btn-outline-dark px-5 py-2 mb-5">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+<!-- Section 4 is having a bug (generates horizontal scroll bar when used and also mobile view small and medium devices view breakes)-->
+
+<section class="section-orange">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h1 class="text-center"class="text-center">Download Our App For all Platforms</h1>
+        <p class="text-center justify-content-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias neque suscipit id facere distinctio voluptas inventore nesciunt quibusdam minima ea.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-center">iOS</h4>
+              <p class="card-text text-center">
+                <i class="fas fa-mobile fa-3x py-2 pr-3"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-titlec text-center">Desktop</h4>
+              <p class="card-text text-center">
+                <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-center">Android</h4>
+              <p class="card-text text-center">
+                <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+<section class="faq-section">
+  <div class="container">
+   <h1 class="text-center mt-3">Frequently Asked Questions (FAQs) </h1>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            What is DevChroma ?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <strong>DevChroma</strong> is basically a <code>blog</code> web application.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            What is the motive behind building this blog web app ?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            This is a web app project build just to learn django.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            How to make a blog post at DevChroma?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            Its easy! , you just have to create a account here and you can navigate to blog section to create your first blog at DevChroma.
+          </div>
+        </div>
+
+  
+      </div>
+    </div>
+    </div>
+    
+</section>
+  
+
+
+</main>
+
+<br>
+
+
+{% endblock body %}
+

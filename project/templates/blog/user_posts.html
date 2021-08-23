@@ -1,0 +1,585 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Blog  | DevChroma
+{% endblock title %}
+{% block blog %}
+active   text-light  btn-sm "  style="background-color: #2876f9;
+          background-image: linear-gradient(200deg, #2876f9 0%, #6d17cb 74%);"
+{% endblock blog %}
+{% block intro %}
+Checkout Our Blogs
+{% endblock intro %}
+{% block href %}
+href="/about"
+{% endblock href %}
+{% block intro-image %}
+<img src="{% static 'images/wall.svg' %}"  class="img-fluid animated" alt="hero-img1">
+{% endblock intro-image %}
+{% block style %}
+
+
+
+#hero1 {
+    
+	background: linear-gradient(90deg, rgb(50, 4, 65) 0%, rgb(50, 2, 126) 35%, rgb(61, 3, 128) 100%);
+  } 
+
+#hero {
+width: 100%;
+height: 80vh;
+overflow: hidden;
+background: linear-gradient(90deg, rgb(50, 4, 65) 0%, rgb(50, 2, 126) 35%, rgb(61, 3, 128) 100%);
+
+}
+
+.btn-neon {
+font-size: 18px;
+text-decoration: none;
+color: #c986f0;
+text-transform:uppercase;
+/*overflow: hidden;*/
+transition: 0.5s;
+background-color: #310e68;
+background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);	
+}
+.btn-neon:hover {
+background: #00031b;
+color: #050801;
+text-decoration: none;
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+.btreset{
+	text-decoration: none;
+}
+.getbutton{
+	background-color: #2876f9;
+    background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+	box-shadow: 0 0 10px rgba(0 , 0 , 0 , 0.1);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+
+.getbutton:hover{
+	box-shadow: 0 0 20px rgba(0 , 0 , 0.5 , 1.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+body{
+	font-family: "Montserrat", sans-serif;
+  }
+  
+  
+  
+  
+  .box div {
+	  position: absolute;
+	  width: 3%;
+	  height: 45px;
+	  border-radius: 10px;
+	  background-color: transparent;
+	  border: 6px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  .box div:nth-child(1) {
+	  top: 12%;
+	  left: 42%;
+	  animation: animate 10s linear infinite;
+  }
+  
+  .box div:nth-child(2) {
+	  top: 70%;
+	  left: 50%;
+	  animation: animate 7s linear infinite;
+  }
+  
+  .box div:nth-child(3) {
+	  top: 17%;
+	  left: 6%;
+	  animation: animate 9s linear infinite;
+  }
+  
+  .box div:nth-child(4) {
+	  top: 20%;
+	  left: 60%;
+	  animation: animate 10s linear infinite;
+  }
+  
+  .box div:nth-child(5) {
+	  top: 67%;
+	  left: 10%;
+	  animation: animate 6s linear infinite;
+  }
+  
+  .box div:nth-child(6) {
+	  top: 80%;
+	  left: 70%;
+	  animation: animate 12s linear infinite;
+  }
+  
+  .box div:nth-child(7) {
+	  top: 60%;
+	  left: 80%;
+	  animation: animate 7s linear infinite;
+  }
+  
+  .box div:nth-child(8) {
+	  top: 32%;
+	  left: 25%;
+	  animation: animate 16s linear infinite;
+  }
+  
+  .box div:nth-child(9) {
+	  top: 90%;
+	  left: 25%;
+	  animation: animate 9s linear infinite;
+  }
+  
+  .box div:nth-child(10) {
+	  top: 20%;
+	  left: 80%;
+	  animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+	  0% {
+		  transform: scale(0) translateY(0) rotate(0);
+		  opacity: 1;
+	  }
+	  100% {
+		  transform: scale(1.3) translateY(-90px) rotate(360deg);
+		  opacity: 0;
+	  }
+  }
+  #hero .container {
+	  padding-top: 72px;
+  }
+  
+  #hero h1 {
+	  margin: 0 0 10px 0;
+	  font-size: 48px;
+	  font-weight: 500;
+	  line-height: 56px;
+	  color: #fff;
+	  cursor: pointer;
+	  
+  }
+  
+.neon{
+	text-shadow: -2px -2px 10px #fff,
+	2px 2px 10px #fff,
+	0 0 20px #f10,
+	0 0 40px #f10,
+	0 0 60px #f10,
+	0 0 80px #f10,
+	0 0 100px #f10;
+}
+
+  #hero h2 {
+	  color: rgba(255, 255, 255, 0.6);
+	  margin-bottom: 50px;
+	  font-size: 24px;
+  }
+  
+  #hero .btn-get-started {
+	  font-family: "Jost", sans-serif;
+	  font-weight: 500;
+	  font-size: 16px;
+	  letter-spacing: 1px;
+	  display: inline-block;
+	  padding: 10px 28px 11px 28px;
+	  border-radius: 50px;
+	  transition: 0.5s;
+	  margin: 10px 0 0 0;
+	  color: #fff;
+	
+	  background: linear-gradient(90deg, rgb(97, 15, 122) 0%, rgb(172, 28, 216) 35%, rgb(10, 10, 10) 100%);
+  }
+  
+  
+  
+  #hero .animated {
+	  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+  @media (max-width: 991px) {
+	  #hero {
+		  height: 100vh;
+		  text-align: center;
+	  }
+	  #hero .animated {
+		  -webkit-animation: none;
+		  animation: none;
+	  }
+	  #hero .hero-img {
+		  text-align: center;
+	  }
+	  #hero .hero-img img {
+		  width: 50%;
+	  }
+  }
+  
+  @media (max-width: 768px) {
+	  #hero h1 {
+		  font-size: 28px;
+		  line-height: 36px;
+	  }
+	  #hero h2 {
+		  font-size: 18px;
+		  line-height: 24px;
+		  margin-bottom: 30px;
+	  }
+	  #hero .hero-img img {
+		  width: 70%;
+	  }
+  }
+  
+  @media (max-width: 575px) {
+	  #hero .hero-img img {
+		  width: 80%;
+	  }
+	  #hero .btn-get-started {
+		  font-size: 16px;
+		  padding: 10px 24px 11px 24px;
+	  }
+	  #hero .btn-watch-video {
+		  font-size: 16px;
+		  padding: 10px 0 8px 40px;
+		  margin-left: 20px;
+	  }
+	  #hero .btn-watch-video i {
+		  font-size: 32px;
+		  top: 7px;
+	  }
+  }
+  
+  @-webkit-keyframes up-down {
+	  0% {
+		  transform: translateY(10px);
+	  }
+	  100% {
+		  transform: translateY(-10px);
+	  }
+  }
+  
+  @keyframes up-down {
+	  0% {
+		  transform: translateY(10px);
+	  }
+	  100% {
+		  transform: translateY(-10px);
+	  }
+  }
+  
+  
+  
+  @-webkit-keyframes animate-preloader {
+	  0% {
+		  transform: rotate(0deg);
+	  }
+	  100% {
+		  transform: rotate(360deg);
+	  }
+  }
+  
+  @keyframes animate-preloader {
+	  0% {
+		  transform: rotate(0deg);
+	  }
+	  100% {
+		  transform: rotate(360deg);
+	  }
+  }
+  
+
+  
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(73, 9, 223);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    height:50px; 
+    width:55px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+     background: linear-gradient(90deg, rgb(50, 4, 65) 0%, rgb(50, 2, 126) 35%, rgb(61, 3, 128) 100%);
+  }
+
+<<<<<<< HEAD
+
+
+  .loading{
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border-top: 10px solid #706fd3;
+	position: relative;
+	top: 50px;
+	animation: a1 2s linear infinite;
+}
+
+.loading::before, .loading::after{
+	content: '';
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	top: -10px;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+.loading::before{
+	border-top: 10px solid #40407a;
+	transform: rotate(120deg);
+}
+.loading::after{
+	border-top: 10px solid #474787;
+	transform: rotate(240deg);
+}
+
+.loading span{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	text-align: center;
+	line-height: 200px;
+	animation: a2 2s linear infinite;
+	z-index: 9;
+}
+
+@keyframes a1{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes a2{
+	to{
+		transform: rotate(-360deg);
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(3, 42, 148) 0%, rgb(11, 16, 56) 35%, rgb(78, 36, 126) 100%);
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #30045a;
+    border-top-color: rgb(225, 238, 237);
+    border-bottom-color: rgb(245, 238, 238);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+
+  .content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0,0.3);
+ 
+}
+ .content-section1 {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 28px rgba(50, 14, 180, 0.8), 0 -10px 20px -5px #9903be;
+}
+
+
+.article-title {
+  color: #444444;
+  text-decoration: none;
+  text-decoration: none;
+}
+a.article-title:hover {
+  color: #6907c5;
+  text-decoration: none;
+}
+.article-content {
+  white-space: pre-line;
+  text-decoration: none;
+}
+
+.article-img {
+  height: 55px;
+  width: 55px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+  
+}
+.article-metadata .text1 {
+	color: rgb(110, 13, 148);
+	text-decoration: none;
+  font-size: 14px;
+	font-weight: bold;
+  }
+
+.article-metadata a:hover {
+  color: rgb(55, 14, 240);
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+<<<<<<< HEAD
+/* Footer */
+
+footer{
+	background: rgba(0, 0, 0, 0.815);
+	overflow-x: hidden;
+	padding: 14vmin 18vmin;
+}
+footer p> span{
+	color: #ff512f;
+}
+footer input{
+	border: none !important;
+}
+footer input::placeholder{
+	color: white !important;
+}
+footer .input-group .input-group-text{
+	background: var(--bggradient);
+	border: none;
+}
+footer .column i{
+	color: #ff512f;
+}
+footer .column i+i{
+	padding: 0 0.5em;
+}
+
+
+
+
+{% endblock style %}
+{% block body %}
+
+<br><br>
+
+<main role="main" class="container">
+<h2 class="mb-3 ">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h2>
+  <div class="row">
+    <div class="col-md-8">
+      {% for post in posts %}
+       <article class="media content-section1">
+                <div class="media-body">
+                  <div class="article-metadata">
+                   <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
+                    <a class="text1" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a> &nbsp;
+                    <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+                  </div>
+                  <h2><a class="article-title" href=" {% url 'post-detail' post.id %} ">{{ post.title }}</a></h2>
+                  <p class="article-content">{{ post.content }}</p>
+                </div>
+        </article>
+      {% endfor %}
+      <center>
+       {% if is_paginated %}
+
+      {% if page_obj.has_previous %}
+        <a class="btn btn-outline-dark mb-4 btn-sm" href="?page=1">First</a>
+        <a class="btn btn-outline-dark mb-4 btn-sm" href="?page={{ page_obj.previous_page_number }}">Prev</a>
+      {% endif %}
+
+      {% for num in page_obj.paginator.page_range %}
+        {% if page_obj.number == num %}
+          <a class="btn btn-dark mb-4 btn-sm" href="?page={{ num }}">{{ num }}</a>
+        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <a class="btn btn-outline-dark mb-4 btn-sm" href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+        <a class="btn btn-outline-dark mb-4 btn-sm" href="?page={{ page_obj.next_page_number }}">Next</a>
+        <a class="btn btn-outline-dark mb-4 btn-sm" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+      {% endif %}
+    {% endif %}
+    </center>
+    </div>
+    <div class="col-md-4">
+      <div class="content-section">
+        <h3>Our Sidebar</h3>
+        <p class='text-muted'>You can put any information here you'd like.
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-light">Latest Posts</li>
+            <li class="list-group-item list-group-item-light">Announcements</li>
+            <li class="list-group-item list-group-item-light">Calendars</li>
+            <li class="list-group-item list-group-item-light">etc</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+  <br><br>
+  
+
+
+{% endblock body %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}{% block title %}
+ About | DevChroma
+{% endblock title %}
+{% block about %}
+active    text-light btn-sm "  type="submit" style="background-color: #6e72fc;
+background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);{% endblock about %}
+{% block intro %}
+About US
+{% endblock intro %}
+{% block href %}
+href="/about"
+{% endblock href %}
+
+{% block intro-image %}
+<img src="{% static 'images/about1.png' %}" alt="hero-img"  class="img-fluid animated" width="600">
+{% endblock intro-image %}
+{% block body %}
+
+<br><br>
+<section class="section-about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 col-lg-5 col-12">
+        <div class="panel">
+        <h2 class="">About US</h2>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt modi ducimus quidem, velit veniam 
+            ea necessitatibus quo voluptatibus voluptate.</p>
+            <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolore quod quos quasi mollitia incidunt nobis minima nostrum error eligendi! 
+              Laboriosam similique sunt vel, est quasi amet quam sapiente! Maiores.</p>
+          </div>
+      </div>
+      <div class="co-md-1 col-lg-1 col-12 col-sm-12"> </div>
+      <div class="col-md-5 col-lg-5 col-md-12 col-lg-4 col-12 d-flex flex-column justify-content-center">
+        <img  type="image/png" src="{% static 'images/standout.svg' %}" alt="contact">
+        </div> 
+        <div class="co-md-1 col-lg-1 col-12 col-sm-12"> </div>
+    </div>
+  </div>
+</section>
+<br><br>
+<div class="down-unwanted-area">
+<p class="navbarscrolltime"></p>
+<div>  
+{% endblock body %}

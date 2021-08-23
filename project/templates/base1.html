@@ -1,0 +1,758 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+   
+    
+
+    
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+
+    <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}"  />
+    <!--<link rel="icon" href="https://img.icons8.com/color/100/000000/pentagram-devil.png" type="image/x-icon">-->
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+  <link href="static/assets/css/mobile-style.css" rel="stylesheet"> 
+
+
+    <title>
+          {% block title %}
+            
+          {% endblock title %}
+    </title>
+     <!--<link rel="icon" href="https://img.icons8.com/color/48/000000/coderwall.png" type="image/x-icon">-->
+
+     {% block head %}
+       
+     {% endblock head %}
+    <style>
+    {% block style %}{% endblock style %}
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@300&family=Sniglet&display=swap');
+
+
+:root{
+	--Snigle-font: "Sniglet", cursive;
+	--Rubik: "Rubik",cursive;
+	--Patua: "Patua One", cursive;
+	--Lobster: "Lobster", cursive;
+	--light-black: #2e2c2caf;
+	--bggradient: linear-gradient(to bottom, #dd2476 0%, #ff512f );
+	--light-gray: rgba(255,255,255,0.5);
+
+
+}
+
+#hero1 {
+    
+	background: linear-gradient(90deg, rgb(50, 4, 65) 0%, rgb(50, 2, 126) 35%, rgb(61, 3, 128) 100%);
+	font-family: var(--Snigle-font);
+}
+
+#hero1 a{
+	font-family: var(--Snigle-font);
+	font-size: 0.9em;
+	
+}
+
+#hero {
+width: 100%;
+height: 80vh;
+overflow: hidden;
+background: linear-gradient(90deg, rgb(50, 4, 65) 0%, rgb(50, 2, 126) 35%, rgb(61, 3, 128) 100%);
+
+}
+#hero .container {
+	  padding-top: 72px;
+	  font-family: var(--Rubik);
+  }
+  
+#hero h1 {
+	  margin: 0 0 10px 0;
+	  font-size: 48px;
+	  font-weight: 500;
+	  line-height: 56px;
+	  color: #fff;
+	  cursor: pointer;
+	  font-family: var(--Rubik);
+	  
+  }
+  
+.neon{
+	text-shadow: -2px -2px 10px #fff,
+	2px 2px 10px #fff,
+	0 0 20px #f10,
+	0 0 40px #f10,
+	0 0 60px #f10,
+	0 0 80px #f10,
+	0 0 100px #f10;
+}
+
+#hero h2 {
+	  color: rgba(255, 255, 255, 0.6);
+	  margin-bottom: 50px;
+	  font-size: 24px;
+	  font-family: var(--Lobster);
+  }
+  
+#hero .btn-get-started {
+	  font-family: "Jost", sans-serif;
+	  font-weight: 500;
+	  font-size: 16px;
+	  letter-spacing: 1px;
+	  display: inline-block;
+	  padding: 10px 28px 11px 28px;
+	  border-radius: 50px;
+	  transition: 0.5s;
+	  margin: 10px 0 0 0;
+	  color: #fff;
+	  font-family: var(--Lobster);
+	
+	  background: linear-gradient(90deg, rgb(97, 15, 122) 0%, rgb(172, 28, 216) 35%, rgb(10, 10, 10) 100%);
+  }
+  .getbutton{
+	background-color: #2876f9;
+	border-radius: 30px;
+    background-image: linear-gradient(315deg, #4e28f9 0%, #6d17cb 74%);
+	box-shadow: 0 0 10px rgba(0 , 0 , 0 , 0.1);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+
+.getbutton:hover{
+	background-color: #7a0cf7;
+	background-image: linear-gradient(315deg, #480be2 0%, #41097e 74%);
+	box-shadow: 0 0 20px rgba(0 , 0 , 0.5 , 1.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.box div {
+    position: absolute;
+    width: 3%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+
+#hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+    #hero {
+        height: 100vh;
+        text-align: center;
+    }
+    #hero .animated {
+        -webkit-animation: none;
+        animation: none;
+    }
+    #hero .hero-img {
+        text-align: center;
+    }
+    #hero .hero-img img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    #hero .hero-img img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero .hero-img img {
+        width: 80%;
+    }
+    #hero .btn-get-started {
+        font-size: 16px;
+        padding: 10px 24px 11px 24px;
+    }
+    #hero .btn-watch-video {
+        font-size: 16px;
+        padding: 10px 0 8px 40px;
+        margin-left: 20px;
+    }
+    #hero .btn-watch-video i {
+        font-size: 32px;
+        top: 7px;
+    }
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(3, 42, 148) 0%, rgb(11, 16, 56) 35%, rgb(78, 36, 126) 100%);
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #30045a;
+    border-top-color: rgb(225, 238, 237);
+    border-bottom-color: rgb(245, 238, 238);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.btn-neon {
+font-size: 18px;
+text-decoration: none;
+color: #370355;
+text-transform:uppercase;
+/*overflow: hidden;*/
+transition: 0.5s;
+background-color: #310e68;
+background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);	
+}
+.btn-neon:hover {
+background: #00031b;
+color: #050801;
+text-decoration: none;
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+</style>
+
+
+
+  </head>
+  <body>
+   
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+      
+<nav id="hero1" class="navbar navbar1 sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="/">
+      <img src=" {% static 'images/logo3.svg' %} " alt="logo" width="50">
+      DevChroma</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          
+          <a class="nav-link  {% block home %} {% endblock home %}" aria-current="page" href="/">Home</a>
+        </li>
+         <li class="nav-item  ">
+          <a class="nav-link {% block blog %}
+            
+          {% endblock blog %}" href="/blog/blog">Blog</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link {% block about %}
+            
+          {% endblock about %}" href=" {% url 'about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% block contact %}
+            
+          {% endblock contact %}" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% block dev %}
+          {% endblock dev %}" href="/dev">
+             Dev
+          </a>
+       </li>
+        <li class="nav-item">
+          <a class="nav-link {% block quiz %}
+          {% endblock quiz %}" href="/quiz">
+             Quiz
+          </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link {% block news %}
+        {% endblock news %}" href="/news">
+           News
+        </a>
+     </li>
+     
+        <li class="nav-item">
+          <a class="nav-link {% block services %}
+            
+          {% endblock services %}" href="/services">Services</a>
+        </li>
+        
+      </ul>
+      <ul class="navbar-nav ml-auto">
+          
+          {% if not request.user.is_authenticated %}
+          <div class="d-md-flex justify-content-md-end">
+            <a href="/login" class="btn btn-md  text-light "  type="submit" style="background-color: #6e72fc;
+            background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);"; 
+          ">Log in  </a> &nbsp;
+          <a  href="/signup" class="btn btn-md  text-light "  type="submit" style="background-color: #2876f9;
+          background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);"; 
+          ">Sign up </a>
+          </div>
+          
+           <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle {% block user %}
+              
+            {% endblock user %}" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/login">Login</a></li>
+              <li><a class="dropdown-item" href="/signup">Sign up</a></li>
+            </ul>
+          </li>-->
+          {% else %}
+       
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle 
+              
+           " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Welcome   {{user.first_name}}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              
+              <li><a class="dropdown-item" href="  {% url 'profile' %} "> Profile </a>  </li>
+              <li><a class="dropdown-item" href="/profile"> New Post </a>  </li>
+              <li><a class="dropdown-item" href="/profile"> Dashboard </a>  </li>
+              <li><a class="dropdown-item" href="/profile"> Settings </a>  </li>
+              <li><a class="dropdown-item" href="/profile"> Help </a>  </li>
+            </ul>
+          </li>
+          
+          <div class=" d-md-flex justify-content-md-end">
+            
+          <a href="/logout" class="btn btn-md   text-light "  type="submit" style="background-color: #2876f9;
+          background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);"; 
+          ">Log out</a>
+          </div>
+
+          {% endif %}
+       
+        
+
+        
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+{% block body %}
+
+ 
+{% endblock body %}
+<!--
+    background-color: #05e8ba;
+background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+
+background-color: #3ee577;
+background-image: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%);
+
+background-color: #ffcfdf;
+background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+
+
+background-color: #f9fcff;
+background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+-->
+
+<!--
+<div class="d-flex flex-column sticky-footer-wrapper  footer min-vh-100" >
+
+<footer class="footer mt-auto py-1 bg-light container " >
+  <div class="row">
+    <div class="col-12 col-md">
+
+      <small class="d-block mb-3 text-muted">&copy; 2021-2022</small>
+      <small class="d-block mb-3 text-muted">made with love by AK</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</div>
+-->
+
+<!--
+<footer class=" container  mt-auto py-5  ">
+  <div class="row">
+    <div class="col-12 col-md">
+ 
+      <small class="d-block mb-3 text-muted">&copy; 2020-2021</small>
+      <small class="d-block mb-3 text-muted">made with love by AK</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+-->
+
+
+
+<!-- Footer -->
+
+
+
+<footer>
+  <div class="container-fluid p-0">
+    <div class="row text-left">
+      <div class="col-md-4">
+        <h4 class="text-light">About us</h4>
+          <p class="text-muted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, vitae adipisci odit veritatis 
+            quasi quibusdam reiciendis praesentium blanditiis voluptates dignissimos.
+          </p>
+          <p class="pt-4 text-muted">
+            Copyright ©2021 . All rights reserved. | This web app is made by <span>Ananthakrishnan</span> 
+          </p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-light">Newsletter</h4>
+        <p class="text-muted">Stay Updated</p>
+        <form  class="form-inline">
+          <div class="col-pl-0">
+           <div class="input-group pr-5">
+              <input type="text" class="form-control bg-dark text-white" placeholder="Email">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+           </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-2 col-sm-12">
+        <h4 class="text-light">Follow us</h4>
+        <p class="text-muted">Lets be social</p>
+        <div class="column">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4 class="text-light">Links</h4>
+       <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<!-- Footer -->
+
+
+<button  onclick="topFunction()" id="myBtn"  title="Go to top"><img src="https://img.icons8.com/metro/24/000000/long-arrow-up.png"/></button>
+
+<div id="preloader"></div>
+
+ <!--    <div class="loader-wrapper">
+  <span class="loader"><span class="loader-inner"></span></span>
+</div>
+  
+  
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+});
+
+-->
+  
+<!-- Template Main JS File -->
+
+<script type="text/javascript" src="static/assets/js/main.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+ 
+
+// Preloader
+$(window).on('load', function() {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function() {
+        $(this).remove();
+      });
+    }
+  });
+  
+
+
+  AOS.init();
+
+
+   
+
+
+</script>
+
+  </body>
+</html>

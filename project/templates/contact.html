@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load static %}
+{% block title %}
+Contact | DevChroma
+{% endblock title %}
+{% block contact %}
+active   text-light btn-sm  "  style="background-color: #2876f9;
+          background-image: linear-gradient(200deg, #2876f9 0%, #6d17cb 74%);"{% endblock contact %}
+{% block intro %}
+We are trying our best to help you..
+
+{% endblock intro %}
+{% block href %}
+href="/about"
+{% endblock href %}
+{% block intro-image %}
+<img src="{% static 'images/contact13.svg' %}"  class="img-fluid animated" alt="hero-img1">
+{% endblock intro-image %}
+{% block body %}
+
+
+ <style>
+  body{
+
+
+ } 
+
+.btn1 {
+
+background-color: #310e68;
+background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+
+}
+
+ .card{
+  border-radius: 15px;
+
+background-color: #ffcfdf;
+background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+border-radius: 30px;
+box-shadow: 0px 0px 10px rgba(0.5, 1.5, 0.5,3.5);
+ }
+
+ 
+ </style>
+<div class="container mt-4 mt-1 mb-2">
+    
+    <div class="row">
+  
+    <div class="col-md-12 col-lg-6 col-12">
+      
+    <div class="row">
+      
+    <div class="col-md-2">
+      
+    </div>
+    </div>
+    <div class="col-md-8">
+     {% for message in messages  %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+        <strong></strong>{{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close ">
+        </button>
+      </div>
+    {% endfor %}
+      <div class="card mt-4">
+       
+        <div class="card-body">
+       
+        <marquee behavior="" direction="left"
+>Fill the details , our team will get in touch with you.</marquee
+>
+          <form action="/contact" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <h4 class="text-center">Contact us</h4>
+
+              <label for="username"></label>
+              <input
+                type="text"
+                class="form-control"
+                name="fullname"
+                id="fullname"
+                placeholder="FullName"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pass1"></label>
+              <input
+                type="Email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="pass1"></label>
+              <input
+                type="Number"
+                class="form-control"
+                name="num"
+                id="num"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="description"></label> 
+              <textarea
+                class="form-control"
+                name="description"
+                id="description" 
+                placeholder="Description"
+                rows="4"
+              ></textarea>
+            </div>
+             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+              <button type="submit" class="btn btn-sm btn-neon btn r  text-light   btn-md  mt-3" id="btn">Submit</button>
+
+             </div>
+     
+          </form>
+         
+        </div>
+      </div>
+
+
+
+</div>
+
+    <div class="col-md-6">
+    
+    </div>
+    
+    </div>
+    <div class="col-md-12 col-lg-6 col-12  d-flex flex-column justify-content-center">
+      <img  type="image/png" src="{% static 'images/contact8.png' %}" alt="contact" >
+    </div>
+    
+</div>
+
+</div>
+<br><br>
+<div class="down-unwanted-area">
+<p class="navbarscrolltime"></p>
+<div>  
+
+ {% endblock body %}
