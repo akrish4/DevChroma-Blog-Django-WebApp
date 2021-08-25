@@ -53,12 +53,12 @@ href="/about"
   <div class="container text-center">
     <div class="row">
       <div class="col-md-6">
-        <div class="pray">
+        <div class="pray" data-aos="fade-right">
           <img src="{% static 'images/altumcode.jpg' %}" alt="Pray">
         </div>
       </div>
       <div class="col-md-6">
-         <div class="panel text-left">
+         <div class="panel text-left" data-aos="fade-left">
            <h2>DevChroma Blogs</h2>
            <p class="pt-4">
              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ab eos totam sint repudiandae obcaecati numquam quas repellat, similique doloremque! 
@@ -90,19 +90,19 @@ href="/about"
     </div>
     <div class="container-fluid text-center">
       <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
-        <div class="rect">
+        <div class="rect"data-aos="zoom-out">
           <h1>07</h1>
           <p>Happy Users</p>
         </div>
-        <div class="rect">
+        <div class="rect"  data-aos="zoom-out">
           <h1>22</h1>
           <p>Blogs</p>
         </div>
-        <div class="rect">
+        <div class="rect" data-aos="zoom-out">
           <h1>14</h1>
           <p>Contact Requests</p>
         </div>
-        <div class="rect">
+        <div class="rect" data-aos="zoom-out">
           <h1>07</h1>
           <p>Profiles</p>
         </div>
@@ -112,10 +112,12 @@ href="/about"
     <div class="purchase text-center">
       <h1>Purchase Whichever you Like</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, unde?</p>
-      <div class="cards">
+      <div class="cards" >
         <div class="d-flex flex-row justify-content-center flex-wrap">
           <!-- First Card-->
-          <div class="card">
+          <div class="card" data-aos="fade-right"
+     data-aos-offset="300"
+    data-aos-duration="500">
             <div class="title">
               <h5 class="card-title">Basic Plan</h5>
             </div>
@@ -128,7 +130,10 @@ href="/about"
             </div>
           </div>
           <!-- Second Card-->
-          <div class="card">
+          <div class="card" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
             <div class="title">
               <h5 class="card-title">Pro Plan</h5>
             </div>
@@ -141,7 +146,10 @@ href="/about"
             </div>
           </div>
           <!-- Third Card-->
-          <div class="card">
+          <div class="card" data-aos="fade-left"
+     data-aos-offset="300"
+    
+     data-aos-duration="500">
             <div class="title">
               <h5 class="card-title">Elite Plan</h5>
             </div>
@@ -171,7 +179,7 @@ href="/about"
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" data-aos="zoom-out-right">
             <div class="card-body">
               <h4 class="card-title text-center">iOS</h4>
               <p class="card-text text-center">
@@ -181,7 +189,7 @@ href="/about"
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" data-aos="zoom-in">
             <div class="card-body">
               <h4 class="card-titlec text-center">Desktop</h4>
               <p class="card-text text-center">
@@ -191,7 +199,7 @@ href="/about"
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" data-aos="zoom-out-left">
             <div class="card-body">
               <h4 class="card-title text-center">Android</h4>
               <p class="card-text text-center">
@@ -205,7 +213,8 @@ href="/about"
 
 </section>
 
-<section class="faq-section">
+<section class="faq-section" data-aos="fade-up"
+     data-aos-duration="2000">
   <div class="container">
    <h1 class="text-center mt-3">Frequently Asked Questions (FAQs) </h1>
     <div class="accordion" id="accordionPanelsStayOpenExample">

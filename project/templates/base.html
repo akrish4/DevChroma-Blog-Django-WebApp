@@ -247,10 +247,11 @@
           </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up"
+     data-aos-duration="3000">
             <h1 id="neonbtn"> {% block intro %}{% endblock intro %} </h1>
             <h2>DevChroma</h2>
-            <div data-aos="fade-up" data-aos-delay="600">
+            <div >
               <div class="text-center text-lg-start">
 
                 <a {% block href %}{% endblock href %}   class="btn getbutton  text-light" >
@@ -264,7 +265,9 @@
             </div>
             
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <div class="col-lg-6 order-1 order-lg-2 hero-img"data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
           {% block intro-image %}{% endblock intro-image %}
 
             </div>

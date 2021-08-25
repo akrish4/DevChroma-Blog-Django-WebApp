@@ -950,12 +950,13 @@ a.article-title:hover {
 {% block body %}
 
 <br><br>
-<main role="main" class="container">
+<main role="main" class="container" >
   <div class="row">
     <div class="col-md-8">
       
       {% for post in posts %}
-       <article class="media content-section1">
+       <article class="media content-section1" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                 <div class="media-body">
                   <div class="article-metadata">
                    <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
@@ -994,11 +995,11 @@ a.article-title:hover {
     </div>
     <div class="col-md-4">
 
-      <div class="content-section navbarscrolltime">
+      <div class="content-section navbarscrolltime" >
 
         <h3>Our Sidebar</h3>
         <p class='text-muted'>You can put any information here you'd like.
-          <ul class="list-group">
+          <ul class="list-group" >
             <li class="list-group-item list-group-item-light">Latest Posts</li>
             <li class="list-group-item list-group-item-light">Announcements</li>
             <li class="list-group-item list-group-item-light">Calendars</li>
